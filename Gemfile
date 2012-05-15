@@ -7,6 +7,7 @@ gem 'rails', '3.2.3'
 
 gem 'pachube_data_formats', :git => 'git@github.com:pachube/pachube_data_formats.git', :branch => 'version_0.3.xx_branch'
 gem 'httparty'
+gem 'thin'
 
 group :development do
   gem 'debugger'
