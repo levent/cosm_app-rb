@@ -1,0 +1,10 @@
+<%= @feed.title %>
+<ul>
+<% @feed.datastreams.each do |ds| %>
+  <%= ds.id %>: <%= ds.current_value %>
+<% end %>
+</ul>
+
+<%= form_for @feed do |f| %>
+  <%= f.submit '+1' %>
+<% end %>
