@@ -1,11 +1,12 @@
 <h1>Cosm Demo App</h1>
-<p>Visit <%= link_to "https://cosm.com/feeds/#{@feed.id}", "https://cosm.com/feeds/#{@feed.id}" %></p>
-<h3>Feed ID: <%= @feed.id %></h3>
-<h3>Title: <%= @feed.title %></h3>
+<p>Visit the feed on Cosm: <%= link_to "https://cosm.com/feeds/#{@feed.id}", "https://cosm.com/feeds/#{@feed.id}" %></p>
+<h3><code class="prettyprint">@feed.id</code> <%= @feed.id %></h3>
+<h3><code class="prettyprint">@feed.title</code> <%= @feed.title %></h3>
 <h3>Datastreams</h3>
+
 <ul>
 <% @feed.datastreams.each do |ds| %>
-  <%= ds.id %>: <%= ds.current_value %>
+  <li><%= ds.id %>: <%= ds.current_value %></li>
 <% end %>
 </ul>
 
@@ -18,7 +19,7 @@
 <h3>CSV:</h3>
 <div>
   <code class="prettyprint">
-    # @feed.to_csv
+    @feed.to_csv #=>
     <br>
     <%= @feed.to_csv %>
   </code>
@@ -27,7 +28,7 @@
 <h3>JSON:</h3>
 <div>
   <code class="prettyprint">
-    # @feed.to_json
+    @feed.to_json #=>
     <br>
     <%= @feed.to_json %>
   </code>
@@ -36,7 +37,7 @@
 <h3>XML:</h3>
 <div>
   <code class="prettyprint">
-    # @feed.to_xml
+    @feed.to_xml #=>
     <br>
     <%= @feed.to_xml %>
   </code>
