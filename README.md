@@ -20,9 +20,9 @@ feed.datastreams = [PachubeDataFormats::Datastream.new(:id => 'test')] # Let's g
 ```
 
 Let's see what it looks like:
-```json
-# feed.to_json
-{"title":"Test feed","version":"1.0.0","datastreams":[{"id":"test"}]}
+```ruby
+feed.to_json
+=> {"title":"Test feed","version":"1.0.0","datastreams":[{"id":"test"}]}
 ```
 
 *httparty* makes it easy to make API requests.
