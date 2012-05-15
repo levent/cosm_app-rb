@@ -1,4 +1,4 @@
-class Feed < PachubeDataFormats::Feed
+class Feed < Cosm::Feed
   extend ActiveModel::Naming
   include ActiveModel::Conversion
 

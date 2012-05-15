@@ -5,8 +5,7 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pachube_data_formats', :git => 'git@github.com:pachube/pachube_data_formats.git', :branch => 'version_0.3.xx_branch'
-gem 'httparty'
+gem 'cosm-rb', :git => 'git@github.com:levent/pachube_data_formats.git', :branch => 'cosm-rb'
 gem 'thin'
 
 group :development do

@@ -1,9 +1,10 @@
 GIT
-  remote: git@github.com:pachube/pachube_data_formats.git
-  revision: f4fd134ea30fd45cd291c7fac4797762af46d858
-  branch: version_0.3.xx_branch
+  remote: git@github.com:levent/pachube_data_formats.git
+  revision: 978887fda996375af5d1b723e6ca567bcb01e381
+  branch: cosm-rb
   specs:
-    pachube_data_formats (0.3.00)
+    cosm-rb (0.0.1)
+      httparty (>= 0.8.3)
       nokogiri (>= 1.4.4)
       yajl-ruby (>= 0.8.1)
 
@@ -132,10 +133,9 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  cosm-rb!
   debugger
-  httparty
   jquery-rails
-  pachube_data_formats!
   rails (= 3.2.3)
   sass-rails (~> 3.2.3)
   thin
