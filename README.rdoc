@@ -1,3 +1,5 @@
 == A sample Cosm Rails App
 
 This app updates a Cosm feed using httparty and the pachube_data_formats project
+
+Try it at: http://cosm-app-rb.herokuapp.com/
