@@ -1,9 +1,10 @@
 <h1>Cosm Demo App</h1>
+<h2>Feed</h2>
 <p>Visit the feed on Cosm: <%= link_to "https://cosm.com/feeds/#{@feed.id}", "https://cosm.com/feeds/#{@feed.id}" %></p>
 <h3><code class="prettyprint">@feed.id</code> <%= @feed.id %></h3>
 <h3><code class="prettyprint">@feed.title</code> <%= @feed.title %></h3>
-<h3>Datastreams</h3>
 
+<h2>Feed -> Datastreams</h2>
 <ul>
 <% @feed.datastreams.each do |ds| %>
   <li><%= ds.id %>: <%= ds.current_value %></li>
@@ -13,6 +14,7 @@
 <%= form_for @feed do |f| %>
   <%= f.label 'Add one to the datastream value', :for => 'plus_one' %>
   <%= f.submit '+1', :id => 'plus_one' %>
+  <p><strong>This will actually update!</strong> <%= link_to "https://cosm.com/feeds/#{@feed.id}", "https://cosm.com/feeds/#{@feed.id}" %></p>
 <% end %>
 
 <h2>Feed formats:</h2>
