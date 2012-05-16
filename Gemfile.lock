@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:levent/pachube_data_formats.git
-  revision: 978887fda996375af5d1b723e6ca567bcb01e381
+  revision: b95f1ddafbb937671f7d40522921ef9932caf5b5
   branch: cosm-rb
   specs:
     cosm-rb (0.0.1)
