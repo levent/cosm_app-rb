@@ -1,6 +1,6 @@
 ## A sample Cosm Rails App
 
-This app updates a Cosm feed using the [cosm-rb](https://github.com/levent/pachube_data_formats) library
+This app updates a Cosm feed using the [cosm-rb](https://github.com/cosm/cosm-rb) library
 
 View it running at: http://cosm-app-rb.herokuapp.com/
 
@@ -11,7 +11,7 @@ View it running at: http://cosm-app-rb.herokuapp.com/
 
 #### Create a Feed
 
-The *pachube_data_formats* library makes it easy to convert Ruby objects into Cosm ones.
+The *cosm-rb* library makes it easy to convert Ruby objects into Cosm ones.
 
 ```ruby
 feed = Cosm::Feed.new # initialize a new Feed object
