@@ -17,9 +17,10 @@ It's a very basic example of using the <%= link_to "cosm-rb", "https://github.co
 </ul>
 
 <%= form_for @feed do |f| %>
-  <%= f.label 'Add one to the datastream value', :for => 'plus_one' %>
-  <%= f.submit '+1', :id => 'plus_one' %>
-  <p><strong>This will actually update!</strong> <%= link_to "https://cosm.com/feeds/#{@feed.id}", "https://cosm.com/feeds/#{@feed.id}" %></p>
+  <%= f.label 'Update value', :for => 'current_value' %>
+  <%= text_field_tag :current_value %>
+  <%= f.submit "Send" %>
+  <p><strong>This will update</strong> <%= link_to "https://cosm.com/feeds/#{@feed.id}", "https://cosm.com/feeds/#{@feed.id}" %></p>
 <% end %>
 
 <h2>Feed formats:</h2>
